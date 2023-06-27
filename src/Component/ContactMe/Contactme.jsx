@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
+import { Helmet } from 'react-helmet-async';
 
 
 const Contactme = () => {
@@ -32,6 +33,10 @@ const Contactme = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Contact || My Portfolio</title>
+            </Helmet>
+            <div>
             <div className='text-center text-orange-500 font-bold text-4xl my-20'>
                 <h2>Contact Me</h2>
             </div>
@@ -81,6 +86,7 @@ const Contactme = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 };

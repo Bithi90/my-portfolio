@@ -13,73 +13,79 @@ import ss12 from '../../assets/2023-06-27 (14).png';
 import ss13 from '../../assets/2023-06-27 (15).png';
 import { Link } from 'react-router-dom';
 import { BsArrow90DegRight } from 'react-icons/Bs';
+import { Helmet } from 'react-helmet-async';
 
 
 const Project = () => {
     return (
         <div>
-            <div className='text-center text-orange-500 font-bold text-4xl my-20'>
-                <h2>My Projects</h2>
-            </div>
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-4'>
-                <div>
-                    <Link to='https://recipe-hub-c3383.web.app/category/0'><h2 className="text-orange-500 font-bold text-2xl mb-10 flex justify-center gap-2">Recipe Hub<BsArrow90DegRight></BsArrow90DegRight></h2></Link>
-                    <div className="h-[300px] w-[400px] p-8 carousel carousel-vertical rounded-box">
-                        <div className="carousel-item h-full">
-                            <img src={ss1}/>
-                        </div>
-                        <div className="carousel-item h-full">
-                            <img src={ss2} />
-                        </div>
-                        <div className="carousel-item h-full">
-                            <img src={ss3} />
-                        </div>
-                        <div className="carousel-item h-full">
-                            <img src={ss4}/>
-                        </div>
-                    </div>
-                    <div></div>
+             <Helmet>
+                <title>Projects || My Portfolio</title>
+            </Helmet>
+            <div>
+                <div className='text-center text-orange-500 font-bold text-4xl my-20'>
+                    <h2>My Projects</h2>
                 </div>
-                <div>
-                <Link to='https://smart-toys-c8079.web.app/'><h2 className="text-cyan-500 font-bold text-2xl mb-10 flex justify-center gap-2">Smart Toy<BsArrow90DegRight></BsArrow90DegRight></h2></Link>
-                    <div className="h-[300px] w-[400px] p-8 carousel carousel-vertical rounded-box">
-                        <div className="carousel-item h-full">
-                            <img src={ss5}/>
+                <div className='grid grid-cols-1 lg:grid-cols-3 gap-4'>
+                    <div>
+                        <Link to='https://recipe-hub-c3383.web.app/category/0'><h2 className="text-orange-500 font-bold text-2xl mb-10 flex justify-center gap-2">Recipe Hub<BsArrow90DegRight></BsArrow90DegRight></h2></Link>
+                        <div className="h-[300px] w-[400px] p-8 carousel carousel-vertical rounded-box">
+                            <div className="carousel-item h-full">
+                                <img src={ss1} />
+                            </div>
+                            <div className="carousel-item h-full">
+                                <img src={ss2} />
+                            </div>
+                            <div className="carousel-item h-full">
+                                <img src={ss3} />
+                            </div>
+                            <div className="carousel-item h-full">
+                                <img src={ss4} />
+                            </div>
                         </div>
-                        <div className="carousel-item h-full">
-                            <img src={ss6} />
-                        </div>
-                        <div className="carousel-item h-full">
-                            <img src={ss7} />
-                        </div>
-                        <div className="carousel-item h-full">
-                            <img src={ss8}/>
-                        </div>
+                        <div></div>
                     </div>
-                    <div></div>
-                </div>
-                <div>
-                <Link to='https://summer-camp-b8153.web.app/'><h2 className="text-orange-500 font-bold text-2xl mb-10 flex justify-center gap-2">Sports Academy<BsArrow90DegRight></BsArrow90DegRight></h2></Link>
-                    <div className="h-[300px] w-[400px] p-8 carousel carousel-vertical rounded-box">
-                        <div className="carousel-item h-full">
-                            <img src={ss9}/>
+                    <div>
+                        <Link to='https://smart-toys-c8079.web.app/'><h2 className="text-cyan-500 font-bold text-2xl mb-10 flex justify-center gap-2">Smart Toy<BsArrow90DegRight></BsArrow90DegRight></h2></Link>
+                        <div className="h-[300px] w-[400px] p-8 carousel carousel-vertical rounded-box">
+                            <div className="carousel-item h-full">
+                                <img src={ss5} />
+                            </div>
+                            <div className="carousel-item h-full">
+                                <img src={ss6} />
+                            </div>
+                            <div className="carousel-item h-full">
+                                <img src={ss7} />
+                            </div>
+                            <div className="carousel-item h-full">
+                                <img src={ss8} />
+                            </div>
                         </div>
-                        <div className="carousel-item h-full">
-                            <img src={ss10} />
-                        </div>
-                        <div className="carousel-item h-full">
-                            <img src={ss11} />
-                        </div>
-                        <div className="carousel-item h-full">
-                            <img src={ss12}/>
-                        </div>
-                        <div className="carousel-item h-full">
-                            <img src={ss13}/>
-                        </div>
+                        <div></div>
                     </div>
-                    <div></div>
+                    <div>
+                        <Link to='https://summer-camp-b8153.web.app/'><h2 className="text-orange-500 font-bold text-2xl mb-10 flex justify-center gap-2">Sports Academy<BsArrow90DegRight></BsArrow90DegRight></h2></Link>
+                        <div className="h-[300px] w-[400px] p-8 carousel carousel-vertical rounded-box">
+                            <div className="carousel-item h-full">
+                                <img src={ss9} />
+                            </div>
+                            <div className="carousel-item h-full">
+                                <img src={ss10} />
+                            </div>
+                            <div className="carousel-item h-full">
+                                <img src={ss11} />
+                            </div>
+                            <div className="carousel-item h-full">
+                                <img src={ss12} />
+                            </div>
+                            <div className="carousel-item h-full">
+                                <img src={ss13} />
+                            </div>
+                        </div>
+                        <div></div>
+                    </div>
+
                 </div>
-                
             </div>
         </div>
     );

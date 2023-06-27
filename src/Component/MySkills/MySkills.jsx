@@ -9,57 +9,63 @@ import logo8 from '../../assets/firebase.png';
 import logo9 from '../../assets/github.png';
 import logo10 from '../../assets/android-icon-transparent-background-4.jpg';
 import logo11 from '../../assets/expreess.png';
+import { Helmet } from 'react-helmet-async';
 
 const MySkills = () => {
     return (
-        <div className='mt-20'>
-            <div className='text-center text-orange-500 font-bold text-4xl mb-20'>
-                <h2>My Skills</h2>
-            </div>
-            <div className='grid grid-cols-4 gap-4 justify-items-center '>
-                <div className='flex items-center gap-x-1'>
-                    <img className='h-[50px] w-[50px]' src={logo1} alt="" />
-                    <p>HTML</p>
+        <div>
+            <Helmet>
+                <title>Skills || My Portfolio</title>
+            </Helmet>
+            <div className='mt-20'>
+                <div className='text-center text-orange-500 font-bold text-4xl mb-20'>
+                    <h2>My Skills</h2>
                 </div>
-                <div className='flex items-center gap-x-1'>
-                    <img className='h-[50px] w-[50px]' src={logo2} alt="" />
-                    <p>CSS</p>
-                </div>
-                <div className='flex items-center gap-x-1'>
-                    <img className='h-[50px] w-[50px]' src={logo3} alt="" />
-                    <p>Tailwind</p>
-                </div>
-                <div className='flex items-center gap-x-1'>
-                    <img className='h-[50px] w-[50px]' src={logo4} alt="" />
-                    <p>Bootstrap</p>
-                </div>
-                <div className='flex items-center gap-x-1'>
-                    <img className='h-[50px] w-[60px]' src={logo5} alt="" />
-                    <p>Javascript</p>
-                </div>
-                <div className='flex items-center gap-x-1'>
-                    <img className='h-[50px] w-[50px]' src={logo6} alt="" />
-                    <p>React</p>
-                </div>
-                <div className='flex items-center gap-x-1'>
-                    <img className='h-[50px] w-[50px]' src={logo7} alt="" />
-                    <p>MongoDB</p>
-                </div>
-                <div className='flex items-center gap-x-1'>
-                    <img className='h-[50px] w-[50px]' src={logo8} alt="" />
-                    <p>Firebase</p>
-                </div>
-                <div className='flex items-center gap-x-1'>
-                    <img className='h-[50px] w-[60px]' src={logo9} alt="" />
-                    <p>Github</p>
-                </div>
-                <div className='flex items-center gap-x-1'>
-                    <img className='h-[50px] w-[50px]' src={logo10} alt="" />
-                    <p>Android</p>
-                </div>
-                <div className='flex items-center gap-x-1'>
-                    <img className='h-[50px] w-[50px]' src={logo11} alt="" />
-                    <p>Express.js</p>
+                <div className='grid grid-cols-4 gap-4 justify-items-center '>
+                    <div className='flex items-center gap-x-1'>
+                        <img className='h-[50px] w-[50px]' src={logo1} alt="" />
+                        <p>HTML</p>
+                    </div>
+                    <div className='flex items-center gap-x-1'>
+                        <img className='h-[50px] w-[50px]' src={logo2} alt="" />
+                        <p>CSS</p>
+                    </div>
+                    <div className='flex items-center gap-x-1'>
+                        <img className='h-[50px] w-[50px]' src={logo3} alt="" />
+                        <p>Tailwind</p>
+                    </div>
+                    <div className='flex items-center gap-x-1'>
+                        <img className='h-[50px] w-[50px]' src={logo4} alt="" />
+                        <p>Bootstrap</p>
+                    </div>
+                    <div className='flex items-center gap-x-1'>
+                        <img className='h-[50px] w-[60px]' src={logo5} alt="" />
+                        <p>Javascript</p>
+                    </div>
+                    <div className='flex items-center gap-x-1'>
+                        <img className='h-[50px] w-[50px]' src={logo6} alt="" />
+                        <p>React</p>
+                    </div>
+                    <div className='flex items-center gap-x-1'>
+                        <img className='h-[50px] w-[50px]' src={logo7} alt="" />
+                        <p>MongoDB</p>
+                    </div>
+                    <div className='flex items-center gap-x-1'>
+                        <img className='h-[50px] w-[50px]' src={logo8} alt="" />
+                        <p>Firebase</p>
+                    </div>
+                    <div className='flex items-center gap-x-1'>
+                        <img className='h-[50px] w-[60px]' src={logo9} alt="" />
+                        <p>Github</p>
+                    </div>
+                    <div className='flex items-center gap-x-1'>
+                        <img className='h-[50px] w-[50px]' src={logo10} alt="" />
+                        <p>Android</p>
+                    </div>
+                    <div className='flex items-center gap-x-1'>
+                        <img className='h-[50px] w-[50px]' src={logo11} alt="" />
+                        <p>Express.js</p>
+                    </div>
                 </div>
             </div>
         </div>
