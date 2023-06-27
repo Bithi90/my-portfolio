@@ -1,10 +1,14 @@
+import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
 
     const navOption = <>
-        <li><a>Item 1</a></li>
-        <li><a>Item 3</a></li>
+        <Link to='/'><li><a>Home</a></li></Link>
+        <Link to='/aboutme'><li><a>About</a></li></Link>
+        <Link to='/skill'><li><a>Skill</a></li></Link>
+        <Link to='/project'><li><a>Projects</a></li></Link>
+        <Link to='/contact'><li><a>Contact</a></li></Link>
     </>
     return (
         <div className="navbar bg-base-100">
@@ -17,7 +21,7 @@ const Navbar = () => {
                         {navOption}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-3xl">Bithi</a>
+                <a className="btn btn-ghost normal-case text-orange-500 font-bold text-3xl">Bithi</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -25,7 +29,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <button className="btn btn-warning bg-orange-500">Hire Me</button>
+               <Link to='https://drive.google.com/file/d/14TxokWI4h-A8TMUdJM2aW7_My6wT_ybh/view?usp=drive_link'><button className="btn text-white btn-warning bg-orange-500">Resume</button></Link>
             </div>
         </div>
     );
